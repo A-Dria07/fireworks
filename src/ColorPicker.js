@@ -26,7 +26,7 @@ const ColorPicker = ({ selectedColors, setSelectedColors, power, setPower, metal
       };
   return (
     <div style={{ display: 'flex', flexDirection: 'column', color: 'white' }}>
-      <span>Select Particle Color:</span>
+      <span>Tria el metall:</span>
       <div style={{ marginTop: '5px' }}>
       {colors.map((item, idx) => (
           <button
@@ -49,7 +49,7 @@ const ColorPicker = ({ selectedColors, setSelectedColors, power, setPower, metal
           </button>
         ))}
       </div>
-      <span style={{ marginTop: '10px' }}>Select Quantity of Component:</span>
+      <span style={{ marginTop: '10px' }}>Tria la quantitat del metall</span>
       <input
         type="range"
         min="1"
@@ -58,10 +58,10 @@ const ColorPicker = ({ selectedColors, setSelectedColors, power, setPower, metal
         onChange={(e) => setMetal(Number(e.target.value))} // Update power value
         style={{ marginTop: '5px' }}
       />
-      <span style={{ color: 'white' }}>{`Current Metal: ${metal} g`}</span>
+      <span style={{ color: 'white' }}>{`Metall actual ${metal} g`}</span>
 
 
-      <span style={{ marginTop: '10px' }}>Select Quantity of Powder:</span>
+      <span style={{ marginTop: '10px' }}>Tria la quantitat de pólvora</span>
       <input
         type="range"
         min="1"
@@ -70,7 +70,7 @@ const ColorPicker = ({ selectedColors, setSelectedColors, power, setPower, metal
         onChange={(e) => setPower(Number(e.target.value))} // Update power value
         style={{ marginTop: '5px' }}
       />
-      <span style={{ color: 'white' }}>{`Current Powder: ${(power * 21.05 + 78.95).toFixed(2)} g`}</span>
+      <span style={{ color: 'white' }}>{`Pólvora actual ${(power * 21.05 + 78.95).toFixed(2)} g`}</span>
     </div>
   );
 };

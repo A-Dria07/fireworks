@@ -71,7 +71,7 @@ const App = () => {
         color: 'white',
         fontSize: '100%',
       }}>
-        CO2 emissions: {count.toFixed(5)} Kg
+        Emissions de CO2: {count.toFixed(5)} Kg
       </div>
       </div>
     </div>
