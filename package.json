@@ -17,7 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d firework-game/build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,7 +39,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://A-Dria07.github.io/fireworks/firework-game",
+  "homepage": "https://A-Dria07.github.io/fireworks",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
