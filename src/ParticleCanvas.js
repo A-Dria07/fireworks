@@ -6,7 +6,6 @@ const ParticleCanvas = ({ colors,power,metal ,setCount}) => {
   const canvasRef = useRef(null);
   const particles = useRef([]);
   const animationId = useRef(null); // Store animation frame ID
-
   const mouse = useRef({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
 
   const gravity = 0.003;
@@ -58,7 +57,7 @@ const ParticleCanvas = ({ colors,power,metal ,setCount}) => {
     mouse.current.x = event.clientX;
     mouse.current.y = event.clientY;
 
-    const particleCount = 500;
+    const particleCount = 500*(power/20);
     //const power = 12;
     let radians = (Math.PI * 2) / particleCount;
     const colorCount = colors.length; // Number of selected colors
@@ -104,6 +103,8 @@ const ParticleCanvas = ({ colors,power,metal ,setCount}) => {
 
     handleResize(); // Set initial canvas size
 
+    
+    
     window.addEventListener('resize', handleResize);
     window.addEventListener('click', handleClick);
 
