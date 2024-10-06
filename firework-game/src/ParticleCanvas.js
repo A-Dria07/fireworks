@@ -1,6 +1,5 @@
 // src/components/ParticleCanvas.js
 //code borrowed from https://codepen.io/chriscourses/pen/Vwamprd 
-import { color } from 'framer-motion';
 import React, { useEffect, useRef } from 'react';
 
 const ParticleCanvas = ({ colors,power,metal ,setCount}) => {
